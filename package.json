@@ -1,0 +1,30 @@
+{
+  "name": "stfbloc",
+  "version": "1.0.0",
+  "description": "Help you to create state manager easier",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "stfbloc": "./src/bin.js"
+  },
+  "scripts": {
+    "stf": "stfbloc",
+    "dev": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "MrCajuka",
+  "license": "ISC",
+  "devDependencies": {
+    "stfbloc": "file://.",
+    "standard": "17.0.0"  
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "dependencies": {
+    "@clack/prompts": "0.6.1",
+    "log-symbols": "5.1.0",
+    "picocolors": "1.0.0"
+  }
+}
