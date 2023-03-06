@@ -1,6 +1,6 @@
 {
   "name": "stfbloc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Help you to create state manager easier",
   "main": "index.js",
   "type": "module",
@@ -17,7 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "stfbloc": "file://.",
-    "standard": "17.0.0"  
+    "standard": "17.0.0"
   },
   "eslintConfig": {
     "extends": "standard"
