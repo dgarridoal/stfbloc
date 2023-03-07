@@ -1,17 +1,24 @@
 
 export const convertToCammelCase = (name) => {
-  const words = name.trim().split('_')
-  let result = ''
-  words.forEach((word) => {
-    result += word[0].toUpperCase() + word.substring(1)
+  // Eliminar caracteres especiales y convertir a minúsculas
+  name = name.replace(/[^a-zA-Z0-9_]/g, '').toLowerCase()
+
+  // Separar palabras por guiones bajos y convertir primera letra de cada palabra en mayúscula
+  name = name.replace(/_([a-z])/g, function (match, letter) {
+    return letter.toUpperCase()
   })
-  return result
+
+  // Convertir primera letra a mayúscula
+  name = name.charAt(0).toUpperCase() + name.slice(1)
+
+  return name
 }
 export const convertToSnakeCase = (name) => {
-  const words = name.trim().split(/(?=[A-Z])/)
-  let result = ''
-  words.forEach((word) => {
-    result += word.toLowerCase() + '_'
-  })
-  return result.substring(0, result.length - 1)
+  // Eliminar caracteres especiales y convertir a minúsculas
+  name = name.replace(/[^a-zA-Z0-9_]/g, '').toLowerCase()
+
+  // Reemplazar espacios y guiones por guiones bajos
+  name = name.replace(/\s+/g, '_').replace(/-+/g, '_')
+
+  return name
 }
