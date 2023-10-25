@@ -2,7 +2,7 @@
   "name": "stfbloc",
   "version": "1.0.1",
   "description": "Help you to create state manager easier",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "bin": {
     "stfbloc": "./src/bin.js"

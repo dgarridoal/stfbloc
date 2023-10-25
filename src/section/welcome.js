@@ -1,6 +1,6 @@
 import { intro, outro } from "@clack/prompts";
 import color from "picocolors";
-import { isFlutterProject } from "../flutter";
+import { isFlutterProject } from "../flutter.js";
 export default function welcome() {
   intro(
     color.inverse(
